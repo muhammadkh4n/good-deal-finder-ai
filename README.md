@@ -4,7 +4,7 @@ An AI-powered application that searches for product deals across the web, stores
 
 ## Features
 
-- Search for any product (not just mini PCs)
+- Search for any product
 - Web scraping for product information 
 - Neo4j knowledge graph storage
 - AI-powered analysis using LangChain and LLMs
