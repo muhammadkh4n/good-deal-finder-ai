@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.search-container {
+  @apply flex flex-col items-center justify-center min-h-screen px-4;
+}
+
+.search-box {
+  @apply w-full max-w-2xl;
+}
+
+.search-input {
+  @apply w-full p-4 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-lg;
+}
+
+.search-button {
+  @apply mt-4 px-8 py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition duration-200;
+}
+
+.results-container {
+  @apply mt-8 w-full max-w-4xl;
+}
+
+.product-card {
+  @apply border border-gray-200 rounded-lg p-4 mb-4 bg-white shadow-sm hover:shadow-md transition duration-200;
+}

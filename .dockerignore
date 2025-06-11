@@ -1,0 +1,11 @@
+.git
+.github
+node_modules
+npm-debug.log
+.next
+out
+README.md
+.DS_Store
+neo4j_data
+neo4j_logs
+neo4j_import
